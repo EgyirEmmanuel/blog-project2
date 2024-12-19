@@ -1,5 +1,6 @@
 import Image from "next/image";
 import inovative from "@/public/inovative.jpg";
+import Link from "next/link";
 
 const Navbar = () => {
   return (
@@ -15,9 +16,9 @@ const Navbar = () => {
         <h1 className="font-semibold">GAIA CLUB</h1>
       </div>
 
-      <h1 className="bg-black text-orange-500 rounded-full p-3 font-semibold">
+      <Link href='/studio' className="bg-black text-orange-500 rounded-full p-3 font-semibold">
         Sign up for GAIA club today !
-      </h1>
+      </Link>
     </div>
   );
 };
