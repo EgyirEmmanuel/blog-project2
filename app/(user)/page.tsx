@@ -10,12 +10,12 @@ const query = groq`*[_type == 'post'] {
 }`
 
 const page = async () => {
-  const post = await client.fetch(query)
-  console.log(post)
+  const posts = await client.fetch(query)
+ 
   
   return (
     <div>
-      <BlogContent />
+      <BlogContent post={posts}/>
     </div>
   )
 }
