@@ -15,7 +15,7 @@ const page = async () => {
   
   return (
     <div>
-      <BlogContent post={posts}/>
+      <BlogContent posts={posts}/>
     </div>
   )
 }
