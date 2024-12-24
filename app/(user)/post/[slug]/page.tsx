@@ -26,7 +26,8 @@ export async function generateStaticParams() {
   return slugRoutes.map((slugRoute) => ({ slugRoute }));
 }
 
-const page = async ({ params: {slug} }: Props) => {
+const page = async ({ params }: Props) => {
+  const { slug } = await params;
   const query = groq`*[_type == 'post' && slug.current == $slug][0]  {
   ...,
   author->,
