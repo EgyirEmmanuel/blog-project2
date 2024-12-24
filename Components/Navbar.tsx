@@ -13,11 +13,11 @@ const Navbar = () => {
           height={35}
           className="rounded-full"
         />
-        <h1 className="font-semibold">GAIA CLUB</h1>
+        <Link href='/' className="font-semibold">Edenway Foundation</Link>
       </div>
 
-      <Link href='/studio' className="bg-black text-orange-500 rounded-full p-3 font-semibold">
-        Sign up for GAIA club today !
+      <Link href='/studio' className="bg-black text-orange-400 rounded-full p-3 font-semibold">
+       create a post !
       </Link>
     </div>
   );

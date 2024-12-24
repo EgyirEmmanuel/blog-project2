@@ -12,7 +12,7 @@ const StudioNavbar = (props: any) => {
           </Link>
         <h1 className="font-semibold">Go to Website</h1>
         </div>
-        <h1 className="font-semibold ">GAIA CLUB</h1>
+        <h1 className="font-semibold ">Edenway Foundation</h1>
       </div>
       {props.renderDefault(props)}
     </div>
