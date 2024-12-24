@@ -7,9 +7,7 @@ import { PortableText } from "@portabletext/react";
 import { RichTextComponent } from  '@/Components/RichTextComponent'
 
 interface Props {
-  params: {
-    slug: string;
-  };
+  params: Promise<{ slug: string }>;
 }
 
 export const revalidate = 30
